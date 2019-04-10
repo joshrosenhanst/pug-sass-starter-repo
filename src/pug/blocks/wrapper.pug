@@ -1,0 +1,26 @@
+block variables
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width,initial-scale=1.0")
+    //- dynamic title variable to be set in variables block in pug templates
+    title= title
+    //- font stylesheet, update _variables.sass if you want to change/remove this
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald",rel="stylesheet")
+    //- app styles
+    link(href="./css/index.css" rel="stylesheet")
+
+    //- Other tags to include:
+    //- meta author, description tags
+    //- meta facebook/OG block
+    //- meta twitter block
+  body
+    //- screen reader content skip
+    a.content-skip(href="#site-main") Skip to main content
+    block header
+    main#site-main
+      block content
+    block footer

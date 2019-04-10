@@ -1,0 +1,25 @@
+{
+  "name": "pug-sass-starter-repo",
+  "version": "1.0.0",
+  "description": "Repo containing files to bootstrap a Pug.js and Sass project, including build scripts, PUG starter templates, and Sass base styles (based on Bulma.io styles)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pug": "./node_modules/pug-cli/index.js",
+    "html": "npm run pug -- src/pug/templates --out dist",
+    "css": "sass src/sass/index.sass dist/css/index.css",
+    "assets": "cp -R src/assets dist",
+    "build": "npm run html && npm run assets && npm run css",
+    "watch_html": "npm run html -- --watch",
+    "watch_css": "npm run css -- --watch",
+    "production": "npm run html && npm run assets && npm run css -- --style=compressed --no-source-map",
+    "prod": "npm run production"
+  },
+  "author": "Josh RosenHanst",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.18.0"
+  }
+}
