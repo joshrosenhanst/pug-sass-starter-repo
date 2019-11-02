@@ -3,16 +3,8 @@
   "version": "1.1.0",
   "description": "Repo containing files to bootstrap a Pug.js and Sass project, including build scripts, Pug.js starter templates, and Sass base styles (based on Bulma.io styles)",
   "scripts": {
-    "gulp": "gulp --version",
-    "html": "pug src/pug/templates --out dist",
-    "css": "sass src/sass/index.sass dist/css/index.css",
-    "assets": "cp -R src/assets dist",
-    "build": "npm run html && npm run assets && npm run css",
-    "watch:html": "npm run html -- --watch",
-    "watch:css": "npm run css -- --watch",
-    "watch": "run-p watch:*",
-    "production": "npm run html && npm run assets && npm run css -- --style=compressed --no-source-map",
-    "prod": "npm run production"
+    "gulp": "gulp",
+    "build": "gulp build"
   },
   "author": "Josh RosenHanst",
   "license": "ISC",
@@ -21,9 +13,11 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.13.0",
-    "npm-run-all": "^4.1.5"
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.13.0"
   }
 }
