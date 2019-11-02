@@ -7,6 +7,7 @@ Repo containing files to bootstrap a [Pug.js](https://github.com/pugjs/pug) and 
 - `src/pug` - Holds all Pug.js templates, blocks, mixins, etc.
 - `src/pug/templates` - The Pug.js templates that will be compiled to HTML files in the `dist/` directory.
 - `src/sass` - The Sass files that will be compiled to CSS files in the `dist/css` directory.
+- `gulpfile.js` - Gulp config file that sets up standard watch and build scripts.
 - `.browserlistrc` - CSS Autoprefixer browser config file. Set to the autoprefixer defaults, but can be changed to add browser support.
 
 ## Build Scripts
