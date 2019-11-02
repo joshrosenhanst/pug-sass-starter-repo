@@ -1,7 +1,7 @@
 {
   "name": "pug-sass-starter-repo",
-  "version": "1.1.0",
-  "description": "Repo containing files to bootstrap a Pug.js and Sass project, including build scripts, Pug.js starter templates, and Sass base styles (based on Bulma.io styles)",
+  "version": "1.2.0",
+  "description": "Repo containing files to bootstrap a Pug.js and Sass project, including gulp build scripts, Pug.js starter templates, and Sass base styles (based on Bulma.io styles)",
   "scripts": {
     "gulp": "gulp",
     "build": "gulp build"
